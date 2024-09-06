@@ -17,8 +17,11 @@
         todoId = 0;
         function addTodo() {
             let data = document.getElementById('inputBox').value;
+            if (data != "") {
+                createDiv(data);
+            }
             // console.log(data);
-            createDiv(data);
+            
         }
 
         function deleteTodo(todoDelId) {
